@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*
+ * print the size of each type
+ */
 int main(void)
 {
 	int a;
