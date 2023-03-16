@@ -1,6 +1,9 @@
 #include <stdio.h>
-/*
- * program to write a string using printf
+
+/**
+ * main - begin program 
+ *	write string using printf
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
