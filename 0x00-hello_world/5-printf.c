@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Write string using printf
  *
- * Return: Always 0 (Success)
+ * Return: Returning 0 success
  */
 int main(void)
 {
