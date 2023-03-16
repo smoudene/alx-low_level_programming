@@ -1,6 +1,9 @@
 #include <stdio.h>
-/*
- * program to write a string
+
+/**
+ * program to print the string using puts
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
