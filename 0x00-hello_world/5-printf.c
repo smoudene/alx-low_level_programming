@@ -2,7 +2,7 @@
 
 /**
  * main - begin program 
- *	write string using printf
+ *	
  * Return: Always 0 (Success)
  */
 int main(void)
