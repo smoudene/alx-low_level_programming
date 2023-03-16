@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Write String using Write
  *
  * Return: Always 0 (Success)
  */
