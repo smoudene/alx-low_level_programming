@@ -9,12 +9,16 @@
 int main(void)
 {
 	char a;
+	char b;
 
-	for (a = 'a'; a <= 'z'; a++)
+	a = 'a';
+	b = 'A';
+
+	while (a++ <= 'z')
 		putchar(a);
-	for (a = 'A'; a <= 'Z'; a++)
-		putchar(a);
-		putchar('\n');
+	while (b++ <= 'Z')
+		putchar(b);
+	putchar('\n');
 
 	return (0);
 }
