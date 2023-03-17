@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - print numbers from 00 to 99.
- * 
- * Return: 0 on success
+ * main - print double digit comb
+ *
+ * Return: 0
  */
 int main(void)
 {
