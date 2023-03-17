@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - print possible comb 3 digits.
- * 
- * Return: 0 
+ * main - Print possible 3 digits comb
+ *
+ * Return: 0
  */
 int main(void)
 {

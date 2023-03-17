@@ -1,11 +1,9 @@
 #include <stdio.h>
 /**
- * main - Prints all possible combinations no repetition
- * 
- * 
- * Return: 0 on success.
+ * main - Print possible comb 2 digits no repetition
+ *
+ * Return: 0
  */
-
 int main(void)
 {
 	int i, j;
