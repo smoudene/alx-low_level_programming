@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * Program to check the last digit of a number
+ * main - Program to check the last digit of a random number
  *
- * return 0
+ * Return: 0
  */
 int main(void)
 {
