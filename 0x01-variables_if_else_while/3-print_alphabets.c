@@ -2,23 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Print alphabets in lower and upper case
+ * main - Entry point
  *
- * Return - 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char a;
-	char b;
+	char low;
 
-	a = 'a';
-	b = 'A';
-
-	while (a++ <= 'z')
-		putchar(a);
-	while (b++ <= 'Z')
-		putchar(b);
-	putchar('\n');
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+	for (low = 'A'; low <= 'Z'; low++)
+		putchar(low);
+		putchar('\n');
 
 	return (0);
 }
