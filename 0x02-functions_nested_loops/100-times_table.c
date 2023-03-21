@@ -9,12 +9,14 @@
  */
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, r;
+	char c;
 
 	i = 0;
+	c = ' ';
 	if (n < 0 || n > 15)
 	{
-		_putchar('i');
+		printf("%c", c);
 	}
 	else
 	{
@@ -23,13 +25,16 @@ void print_times_table(int n)
 			j = 0;
 			while (j <= n)
 			{
-				printf("%d", j * i);
+				r = j * i;
+				printf("%d", r);
 				if (j + 1 <= n)
 				{
-					if (j < 10)
+					if ((j + 1) * i < 10)
 						printf(",   ");
-					else if (j >= 10)
+					else if ((j + 1) * i >= 10 && (j + 1) * i < 100)
 						printf(",  ");
+					else if ((j + 1) * i >= 100)
+						printf(", ");
 				}
 				j++;
 			}
@@ -38,4 +43,3 @@ void print_times_table(int n)
 		}
 	}
 }
-
