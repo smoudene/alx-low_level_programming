@@ -1,39 +1,38 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table -  a function that prints the n times table, starting with 0
- * r = row, c = column, d = digits of current result
+ * i = row, j = column, d = digits
  * @n: number input
  * Return: times table
  * add extra space past single digit
  */
 void print_times_table(int n)
 {
-	int r, c, d;
+	int i, j;
 
-        for (r = 0; r <= n; r++)
-        {
-                _putchar('0');
-                _putchar(',');
-                _putchar(' ');
-                for (c = 1; c <= n; c++)
-                {
-                        d = (r * c);
-                        if ((d / 10) > 0)
-                        {
-                                _putchar((d / 10) + '0');
-                        }
-                        else
-                        {
-                                _putchar(' ');
-                        }
-                        _putchar((d % 10) + '0');
-
-                        if (c < n)
-                        {
-                                _putchar(',');
-                                _putchar(' ');
-                        }
-                }
-                _putchar('\n');
-        }
+	i = 0;
+	if (n < 0 || n > 15)
+	{
+		return (0);
+	}
+	else
+	{
+		while (i <= n)
+		{
+			j = 0;
+			while (j <= n)
+			{
+				printf(j * i);
+				if (j + 1 <= n && j + 1 >= 10)
+					printf(", ");
+				else if if (j + 1 <= n && j + 1 < 10)
+					printf(",  ");
+				j++;
+			}
+			i++;
+		}
+	}
+	_putchar('\n');
 }
+
