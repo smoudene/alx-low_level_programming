@@ -3,7 +3,7 @@
 /**
  * main - program that prints the sum of 3 5 mult
  *
- * Return: 0 or 1 or -1
+ * Return: 0
  */
 int main(void)
 {
@@ -20,4 +20,6 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", s);
+
+	return (0);
 }
