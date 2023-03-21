@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <main.h>
 
 /**
  * main - print _putchar, followed by a new line.
@@ -7,6 +7,13 @@
  */
 int main(void)
 {
-	write(1, "_putchar\n", 9);
+	char *s = "_putchar";
+	int i = 0;
+
+	while(s[i])
+	{
+		_putchar(s[i]);
+		i++;
+	}
 	return (0);
 }
