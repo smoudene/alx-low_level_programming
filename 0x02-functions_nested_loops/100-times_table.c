@@ -27,9 +27,9 @@ void print_times_table(int n)
 				if (j + 1 <= n)
 				{
 					if (j < 10)
-						printf(",  ");
+						printf(",   ");
 					else
-						printf(", ");
+						printf(",  ");
 				}
 				j++;
 			}
