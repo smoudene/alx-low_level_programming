@@ -24,10 +24,13 @@ void print_times_table(int n)
 			while (j <= n)
 			{
 				printf("%d", j * i);
-				if ((j + 1 <= n) && (j >= 10))
-					printf(", ");
-				else if ((j + 1 <= n) && (j < 10))
-					printf(",  ");
+				if (j + 1 <= n)
+				{
+					if (j < 10)
+						printf(",  ");
+					else
+						printf(", ");
+				}
 				j++;
 			}
 			printf("\n");
