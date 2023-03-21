@@ -24,9 +24,9 @@ void print_times_table(int n)
 			while (j <= n)
 			{
 				printf("%d", j * i);
-				if (j + 1 <= n && j + 1 >= 10)
+				if ((j + 1 <= n) && (j >= 10))
 					printf(", ");
-				else if ((j + 1 <= n) && (j + 1 < 10))
+				else if ((j + 1 <= n) && (j < 10))
 					printf(",  ");
 				j++;
 			}
