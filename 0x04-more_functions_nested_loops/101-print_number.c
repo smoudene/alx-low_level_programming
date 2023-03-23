@@ -17,8 +17,8 @@ void print_number(int n)
 	}
 	if (nb > 9)
 	{
-		_putnbr(nb / 10);
-		_putnbr(nb % 10);
+		print_number(nb / 10);
+		print_number(nb % 10);
 	}
 	else
 		_putchar(nb + '0');
