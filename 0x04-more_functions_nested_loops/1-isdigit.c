@@ -1,24 +1,17 @@
 #include "main.h"
 
 /**
- * _isdigit - check if the input is digital
- * @c: the digit to be checked
+ * _isdigit - input
  *
- * Return: 1 or 0
+ * Description: define if a character is a number
+ * @c: charater
+ * Return: 1 yes 0 no
  */
+
 int _isdigit(int c)
 {
-	int i;
-
-	i = 0;
-	while (i < 10)
-	{
-		if (i == c)
-		{
-			return (1);
-			break;
-		}
-		i++;
-	}
-	return (0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
