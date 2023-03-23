@@ -17,9 +17,9 @@ void print_number(int n)
 	}
 	if (nb > 9)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		_putnbr(nb / 10);
+		_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(nb + '0');
+		_putchar(nb + '0');
 }
