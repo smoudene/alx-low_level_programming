@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts2 - function that writes a string
+ * puts2 - function that writes a string
  * @str: pointer to a string
  */
 
