@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * _puts - function that writes a string
@@ -13,8 +12,8 @@ void _puts(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, str[i], 1);
+		_putchar(str[i]);
 		i++;
 	}
-	write(1, "\n", 1);
+	_putchar('\n');
 }
