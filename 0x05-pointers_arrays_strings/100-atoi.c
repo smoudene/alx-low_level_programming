@@ -8,10 +8,11 @@
 
 int _atoi(char *s)
 {
-	int res, sign, i, no_num;
+	int res, sign, i, no_num, j;
 
 	i = 0;
 	sign = 1;
+	j = 0;
 	res = 0;
 	no_num = 1;
 
@@ -26,13 +27,15 @@ int _atoi(char *s)
 	}
 	i = 0;
 
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t' ||
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t' || s[i] == '-' || 
 			s[i] == '+'|| (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 	{
+		if (s[i] == '-')
+		{
+			sign = sign * -1;
+		}
 		i++;
 	}
-	if (s[i] == '-')
-		sign = -1;
 	while (s[i] && s[i] >= '0' && s[i] <= '9')
 	{
 		res = (res * 10) + (s[i] - '0');
