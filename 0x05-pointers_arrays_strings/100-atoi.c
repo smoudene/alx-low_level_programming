@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int r, s, i, no_num, j;
 
 	i = 0;
-	s = 1;
+	sign = 1;
 	res = 0;
 	j = 0;
 	no_num = 1;
@@ -36,7 +36,7 @@ int _atoi(char *s)
 	}
 	if (s[i] == '-')
 	{
-		s = -1;
+		sign = -1;
 		i++;
 	}
 	while (s[i] && s[i] >= '0' && s[i] <= '9')
@@ -47,5 +47,5 @@ int _atoi(char *s)
 	if (no_ num == 1)
 		return (0);
 	else
-		return (res * s);
+		return (res * sign);
 }
