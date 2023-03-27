@@ -44,7 +44,7 @@ int _atoi(char *s)
 		res = (res * 10) + (s[i] + '0');
 		i++;
 	}
-	if (no_ num == 1)
+	if (no_num == 1)
 		return (0);
 	else
 		return (res * sign);
