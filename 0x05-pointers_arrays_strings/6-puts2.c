@@ -1,19 +1,25 @@
 #include "main.h"
 
 /**
- * _puts - function that writes a string
+ * _puts2 - function that writes a string
  * @str: pointer to a string
  */
 
 void puts2(char *str)
 {
-	int i;
+	int len, i;
 
-	i = 0;
-	while (str[i] != '\0')
+	len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
 	{
 		_putchar(str[i]);
-		i = i + 2;
 	}
+
 	_putchar('\n');
 }
