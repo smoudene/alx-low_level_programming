@@ -5,7 +5,7 @@
  * @str: pointer to a string
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 
