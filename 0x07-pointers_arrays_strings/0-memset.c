@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * *_memset - fills the first n byes of s with b
