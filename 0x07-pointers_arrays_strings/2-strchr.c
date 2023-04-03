@@ -10,19 +10,12 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	int o = -1;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-		{
-			o = i;
-			break;
-		}
+			return (s + i);
 		i++;
 	}
-	if (o == -1)
-		return ('\0');
-	else
-		return (s + o);
+	return ('\0');
 }
