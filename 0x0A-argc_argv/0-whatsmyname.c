@@ -9,8 +9,6 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i = 0;
-
 	if (argc > 0)
 	{
 		_puts(argv[0]);
