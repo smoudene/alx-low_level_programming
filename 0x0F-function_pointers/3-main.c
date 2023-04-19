@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(98);
 	}
 	op = get_op_func(argv[2]);
 	if (!op)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 	printf("%d\n", op(atoi(argv[1]), atoi(argv[3])));
 	return (0);
