@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 					printf("%s%f", sep, va_arg(l, double));
 					break;
 				case 's':
-					str = va_arg(l, char *);
+					s = va_arg(l, char *);
 					if (!s)
 						s = "(nil)";
 					printf("%s%s", sep, s);
@@ -43,4 +43,9 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(l);
+}
+int main(void)
+{
+    print_all("ceis", 'B', 3, "stSchool");
+    return (0);
 }
