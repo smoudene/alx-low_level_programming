@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * printBeforeMain - set the attribute constryctor
 * that allows to run a function before main
