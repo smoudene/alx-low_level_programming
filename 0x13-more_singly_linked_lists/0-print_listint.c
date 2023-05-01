@@ -3,19 +3,19 @@
 /**
  * print_listint - prints elements of a linked list.
  * @h: head of the list
- * Return: number of node.
+ * Return: length
  */
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *c = h;
+	const listint_t *cursor = h;
 	size_t cp = 0;
 
-	while (c != NULL)
+	while (cursor != NULL)
 	{
-		printf("%d\n", c->n);
+		printf("%d\n", cursor->n);
 		cp += 1;
-		c = c->next;
+		cursor = cursor->next;
 	}
 	return (cp);
 }
